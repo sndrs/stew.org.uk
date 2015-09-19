@@ -12,12 +12,14 @@ const browserSync = bs.create();
 
 gulp.task('default', ['sass'], () => {
     browserSync.init({
-        "server": true,
+        "server": {
+            baseDir: "./src"
+        },
         "port": 3000,
         "minify": false
     });
-    gulp.watch('style.scss', ['sass']);
-    gulp.watch("index.html").on('change', browserSync.reload);
+    gulp.watch('./src/style.scss', ['sass']);
+    gulp.watch("./src/index.html").on('change', browserSync.reload);
 });
 
 gulp.task('sass', () =>
