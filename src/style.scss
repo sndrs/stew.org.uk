@@ -16,6 +16,7 @@ $font-small: .8rem;
 html {
     box-sizing: border-box;
     height: 100%;
+    font-size: 93.75%; // base size 15px;
 }
 
 *, *:before, *:after {
@@ -118,6 +119,7 @@ address {
 
 .info {
     font-size: $font-small;
+    font-style: italic;
 }
 
 .social {
@@ -144,7 +146,7 @@ address {
     }
 
     .info {
-        font-size: initial;
+        font-size: inherit;
         flex: 1;
         padding-left: 1rem;
     }
