@@ -1,5 +1,5 @@
 # stew.org.uk
-Website for Stew, a not-for-profit gallery and studios in Norwich, UK.
+Source of website for Stew, a not-for-profit gallery and studios in Norwich, UK.
 
 ### Installation
 `npm install`
