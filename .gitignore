@@ -1,7 +1,8 @@
-dist
 node_modules
 *.css
 
-.publish/
-dist/index.html
-src/style.css
+.publish
+dist/*
+!dist/CNAME
+!dist/README.md
+
